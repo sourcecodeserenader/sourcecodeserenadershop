@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="SourceCodeSerenader Shop – digital art, tutorials, templates & more"
+      content="SourceCodeSerenader Shop – our top-selling digital art, tutorials & templates"
     />
     <meta name="author" content="Brianna Reed" />
     <title>Popular Items – SourceCodeSerenader Shop</title>
@@ -22,9 +22,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- Navigation -->
+    <!-- Navigation (copy-pasted from index.html) -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="index.html">SourceCodeSerenader Shop</a>
@@ -58,7 +57,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-              >Shop</a>
+              >
+                Shop
+              </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdown"
@@ -88,67 +89,66 @@
       </div>
     </nav>
 
-    <!-- Page header -->
+    <!-- Page Header -->
     <header class="bg-dark py-5">
       <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
           <h1 class="display-4 fw-bolder">Popular Items</h1>
           <p class="lead fw-normal text-white-50 mb-0">
-            Your best-selling picks
+            Check out our top-selling products
           </p>
         </div>
       </div>
     </header>
 
-    <!-- Products Grid -->
+    <!-- Products Grid (you can filter here to only show truly “popular” items) -->
     <section class="py-5">
       <div class="container px-4 px-lg-5 mt-5">
         <div
           class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
         >
-          <!-- Copy all 8 cards from index.html here (or filter to just your “popular” ones) -->
-          <!-- Example card: -->
+          <!-- Example popular item -->
           <div class="col mb-5">
             <div class="card h-100">
               <!-- Product image-->
               <img
                 class="card-img-top"
-                src="assets/img/portfolio/special-item.jpg"
-                alt="Special Item"
+                src="assets/img/portfolio/photoshop-brushes.jpg"
+                alt="Popular Item"
               />
               <!-- Product details-->
               <div class="card-body p-4">
                 <div class="text-center">
-                  <h5 class="fw-bolder">Special Item</h5>
+                  <h5 class="fw-bolder">Popular Item</h5>
+                  <!-- ★★★★★ stars, etc. -->
                   <div class="d-flex justify-content-center small text-warning mb-2">
-                    <i class="bi-star-fill"></i>
-                    <i class="bi-star-fill"></i>
-                    <i class="bi-star-fill"></i>
-                    <i class="bi-star-fill"></i>
-                    <i class="bi-star-fill"></i>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
                   </div>
-                  <span class="text-muted text-decoration-line-through">$20.00</span>
-                  $18.00
+                  $40.00
                 </div>
               </div>
-              <!-- Add to cart-->
+              <!-- Product actions-->
               <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
                 <button
                   class="btn btn-outline-dark mt-auto add-to-cart-btn"
-                  data-name="Special Item"
-                  data-price="18.00"
+                  data-name="Popular Item"
+                  data-price="40.00"
                 >
                   Add to cart
                 </button>
               </div>
             </div>
           </div>
-          <!-- …repeat for the other “popular” cards… -->
+          <!-- Repeat for any other “popular” cards... -->
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer-->
     <footer class="py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">
@@ -198,9 +198,11 @@
       </div>
     </div>
 
-    <!-- Bootstrap JS (for dropdowns) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Your cart logic -->
+    <!-- Bootstrap bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <!-- Your cart + dropdown logic -->
     <script src="js/scripts.js"></script>
   </body>
 </html>
