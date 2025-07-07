@@ -8,93 +8,78 @@
     />
     <meta
       name="description"
-      content="SourceCodeSerenader Shop – digital art, tutorials, templates & more"
+      content="SourceCodeSerenader Shop - digital assets, tutorials & more"
     />
     <meta name="author" content="Brianna Reed" />
     <title>SourceCodeSerenader Shop</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap icons-->
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      id="mainNav"
+    >
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="index.html">SourceCodeSerenader Shop</a>
+        <a class="navbar-brand" href="#">SourceCodeSerenader Shop</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          Menu <i class="fas fa-bars"></i>
         </button>
         <div
           class="collapse navbar-collapse"
-          id="navbarSupportedContent"
+          id="navbarResponsive"
         >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Shop</a
-              >
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdown"
-              >
-                <li><a class="dropdown-item" href="all-products.html">All Products</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="popular-items.html">Popular Items</a></li>
-                <li><a class="dropdown-item" href="new-arrivals.html">New Arrivals</a></li>
-              </ul>
-            </li>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
           </ul>
           <button
             class="btn btn-outline-dark"
             data-bs-toggle="modal"
             data-bs-target="#cartModal"
-            type="button"
           >
-            <i class="bi-cart-fill me-1"></i>
-            Cart
-            <span
-              id="cart-count"
-              class="badge bg-dark text-white ms-1 rounded-pill"
-              >0</span
-            >
+            <i class="fas fa-shopping-cart"></i>
+            Cart (<span id="cart-count">0</span>)
           </button>
         </div>
       </div>
     </nav>
 
-    <!-- Header-->
+    <!-- Shop Header-->
     <header class="bg-dark py-5">
       <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-          <h1 class="display-4 fw-bolder">Shop in style</h1>
-          <p class="lead fw-normal text-white-50 mb-0">
-            Discover digital art, tutorials & templates
+          <h1 class="display-4 fw-bolder">Welcome to My Shop</h1>
+          <p class="lead fw-normal text-white-50">
+            Discover digital assets, tutorials & more
           </p>
         </div>
       </div>
@@ -103,26 +88,28 @@
     <!-- Products Grid-->
     <section class="py-5">
       <div class="container px-4 px-lg-5 mt-5">
-        <div
-          class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
-        >
-          <!-- 1: Digital Art Commission -->
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <!-- Product Card Template -->
+          <!-- 1 -->
           <div class="col mb-5">
             <div class="card h-100">
+              <!-- Image-->
               <img
                 class="card-img-top"
                 src="assets/img/portfolio/digital-art.jpg"
                 alt="Digital Art Commission"
               />
+              <!-- Product details-->
               <div class="card-body p-4">
                 <div class="text-center">
+                  <!-- Name-->
                   <h5 class="fw-bolder">Digital Art Commission</h5>
+                  <!-- Price-->
                   $150.00
                 </div>
               </div>
-              <div
-                class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center"
-              >
+              <!-- Add to cart-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
                 <button
                   class="btn btn-outline-dark mt-auto add-to-cart-btn"
                   data-name="Digital Art Commission"
@@ -133,8 +120,7 @@
               </div>
             </div>
           </div>
-
-          <!-- 2: Blender Masterclass -->
+          <!-- 2 -->
           <div class="col mb-5">
             <div class="card h-100">
               <img
@@ -148,9 +134,7 @@
                   $80.00
                 </div>
               </div>
-              <div
-                class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center"
-              >
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
                 <button
                   class="btn btn-outline-dark mt-auto add-to-cart-btn"
                   data-name="Blender Masterclass"
@@ -161,8 +145,7 @@
               </div>
             </div>
           </div>
-
-          <!-- 3: Photoshop Brush Pack -->
+          <!-- 3 -->
           <div class="col mb-5">
             <div class="card h-100">
               <img
@@ -176,9 +159,7 @@
                   $25.00
                 </div>
               </div>
-              <div
-                class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center"
-              >
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
                 <button
                   class="btn btn-outline-dark mt-auto add-to-cart-btn"
                   data-name="Photoshop Brush Pack"
@@ -189,8 +170,7 @@
               </div>
             </div>
           </div>
-
-          <!-- 4: Unreal Engine Template -->
+          <!-- 4 -->
           <div class="col mb-5">
             <div class="card h-100">
               <img
@@ -204,133 +184,11 @@
                   $60.00
                 </div>
               </div>
-              <div
-                class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center"
-              >
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
                 <button
                   class="btn btn-outline-dark mt-auto add-to-cart-btn"
                   data-name="Unreal Engine Template"
                   data-price="60.00"
-                >
-                  Add to cart
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5: JavaScript Essentials eBook (Sale) -->
-          <div class="col mb-5">
-            <div class="card h-100">
-              <div
-                class="badge bg-dark text-white position-absolute"
-                style="top: 0.5rem; right: 0.5rem"
-                >Sale</div
-              >
-              <img
-                class="card-img-top"
-                src="assets/img/portfolio/js-ebook.jpg"
-                alt="JavaScript Essentials eBook"
-              />
-              <div class="card-body p-4">
-                <div class="text-center">
-                  <h5 class="fw-bolder">JavaScript Essentials eBook</h5>
-                  <span class="text-muted text-decoration-line-through"
-                    >$30.00</span
-                  >
-                  $20.00
-                </div>
-              </div>
-              <div
-                class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center"
-              >
-                <button
-                  class="btn btn-outline-dark mt-auto add-to-cart-btn"
-                  data-name="JavaScript Essentials eBook"
-                  data-price="20.00"
-                >
-                  Add to cart
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6: VSCode Theme Pack -->
-          <div class="col mb-5">
-            <div class="card h-100">
-              <img
-                class="card-img-top"
-                src="assets/img/portfolio/vscode-theme.jpg"
-                alt="VSCode Theme Pack"
-              />
-              <div class="card-body p-4">
-                <div class="text-center">
-                  <h5 class="fw-bolder">VSCode Theme Pack</h5>
-                  $10.00
-                </div>
-              </div>
-              <div
-                class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center"
-              >
-                <button
-                  class="btn btn-outline-dark mt-auto add-to-cart-btn"
-                  data-name="VSCode Theme Pack"
-                  data-price="10.00"
-                >
-                  Add to cart
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 7: NPM Starter Boilerplate -->
-          <div class="col mb-5">
-            <div class="card h-100">
-              <img
-                class="card-img-top"
-                src="assets/img/portfolio/npm-boilerplate.jpg"
-                alt="NPM Starter Boilerplate"
-              />
-              <div class="card-body p-4">
-                <div class="text-center">
-                  <h5 class="fw-bolder">NPM Starter Boilerplate</h5>
-                  $30.00
-                </div>
-              </div>
-              <div
-                class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center"
-              >
-                <button
-                  class="btn btn-outline-dark mt-auto add-to-cart-btn"
-                  data-name="NPM Starter Boilerplate"
-                  data-price="30.00"
-                >
-                  Add to cart
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 8: SourceCodeSerenader T-Shirt -->
-          <div class="col mb-5">
-            <div class="card h-100">
-              <img
-                class="card-img-top"
-                src="assets/img/portfolio/tshirt.jpg"
-                alt="Brand T-Shirt"
-              />
-              <div class="card-body p-4">
-                <div class="text-center">
-                  <h5 class="fw-bolder">Brand T-Shirt</h5>
-                  $25.00
-                </div>
-              </div>
-              <div
-                class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center"
-              >
-                <button
-                  class="btn btn-outline-dark mt-auto add-to-cart-btn"
-                  data-name="Brand T-Shirt"
-                  data-price="25.00"
                 >
                   Add to cart
                 </button>
@@ -344,9 +202,7 @@
     <!-- Footer-->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">
-          Copyright &copy; 2025 Brianna Reed
-        </p>
+        <p class="m-0 text-center text-white">Copyright © 2025</p>
       </div>
     </footer>
 
@@ -370,7 +226,9 @@
             ></button>
           </div>
           <div class="modal-body">
-            <ul class="list-group" id="cart-items"></ul>
+            <ul class="list-group" id="cart-items">
+              <!-- JS will inject cart items here -->
+            </ul>
             <div class="mt-3 text-end">
               <strong>Total: $<span id="cart-total">0.00</span></strong>
             </div>
@@ -395,10 +253,8 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     ></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 
-    <!-- Cart Functionality -->
+    <!-- Cart functionality-->
     <script>
       const cart = [];
       const cartCountEl = document.getElementById("cart-count");
@@ -407,49 +263,51 @@
       const checkoutBtn = document.getElementById("checkout-btn");
 
       function updateCartUI() {
+        // update badge
         cartCountEl.textContent = cart.length;
+        // build list
         cartItemsEl.innerHTML = "";
         let total = 0;
-        cart.forEach((item) => {
+        cart.forEach((item, i) => {
           total += parseFloat(item.price);
           const li = document.createElement("li");
-          li.className =
-            "list-group-item d-flex justify-content-between align-items-center";
-          li.innerHTML = 
+          li.className = "list-group-item d-flex justify-content-between align-items-center";
+          li.innerHTML = `
             ${item.name}
             <span>$${Number(item.price).toFixed(2)}</span>
-          ;
+          `;
           cartItemsEl.appendChild(li);
         });
         cartTotalEl.textContent = total.toFixed(2);
       }
 
-      document
-        .querySelectorAll(".add-to-cart-btn")
-        .forEach((btn) =>
-          btn.addEventListener("click", () => {
-            cart.push({
-              name: btn.dataset.name,
-              price: btn.dataset.price,
-            });
-            updateCartUI();
-          })
-        );
+      // attach add-to-cart handlers
+      document.querySelectorAll(".add-to-cart-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const name = btn.getAttribute("data-name");
+          const price = btn.getAttribute("data-price");
+          cart.push({ name, price });
+          updateCartUI();
+        });
+      });
 
+      // optional: checkout alert
       checkoutBtn.addEventListener("click", () => {
-        if (!cart.length) {
+        if (cart.length === 0) {
           alert("Your cart is empty!");
-          return;
+        } else {
+          alert(
+            "Thank you for your order!\n\n" +
+              cart.map((i) => i.name + " - $" + i.price).join("\n")
+          );
+          cart.length = 0; // clear
+          updateCartUI();
+          // close modal
+          const modal = bootstrap.Modal.getInstance(
+            document.getElementById("cartModal")
+          );
+          modal.hide();
         }
-        alert(
-          "Thank you for your order!\n\n" +
-            cart.map((i) => ${i.name} – $${i.price}).join("\n")
-        );
-        cart.length = 0;
-        updateCartUI();
-        bootstrap.Modal.getInstance(
-          document.getElementById("cartModal")
-        ).hide();
       });
     </script>
   </body>
