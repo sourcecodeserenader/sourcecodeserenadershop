@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="SourceCodeSerenader Shop – digital art, tutorials, templates & more"
+      content="SourceCodeSerenader Shop – browse our latest digital art, tutorials & templates"
     />
     <meta name="author" content="Brianna Reed" />
     <title>New Arrivals – SourceCodeSerenader Shop</title>
@@ -22,9 +22,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- Navigation -->
+    <!-- Navigation (identical to index) -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container px-4 px-lg-5">
         <a class="navbar-brand" href="index.html">SourceCodeSerenader Shop</a>
@@ -58,7 +57,9 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-              >Shop</a>
+              >
+                Shop
+              </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdown"
@@ -88,26 +89,25 @@
       </div>
     </nav>
 
-    <!-- Page header -->
+    <!-- Page Header -->
     <header class="bg-dark py-5">
       <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
           <h1 class="display-4 fw-bolder">New Arrivals</h1>
           <p class="lead fw-normal text-white-50 mb-0">
-            Fresh in stock right now
+            Browse our latest products
           </p>
         </div>
       </div>
     </header>
 
-    <!-- Products Grid -->
+    <!-- Products Grid (show only your newest items here) -->
     <section class="py-5">
       <div class="container px-4 px-lg-5 mt-5">
         <div
           class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
         >
-          <!-- Copy all 8 cards from index.html here (or just your newest four) -->
-          <!-- Example card: -->
+          <!-- Example new arrival -->
           <div class="col mb-5">
             <div class="card h-100">
               <!-- Product image-->
@@ -123,7 +123,7 @@
                   $30.00
                 </div>
               </div>
-              <!-- Add to cart-->
+              <!-- Product actions-->
               <div class="card-footer p-4 pt-0 border-top-0 bg-transparent text-center">
                 <button
                   class="btn btn-outline-dark mt-auto add-to-cart-btn"
@@ -135,12 +135,12 @@
               </div>
             </div>
           </div>
-          <!-- …repeat for your other “new arrival” cards… -->
+          <!-- Repeat for each new arrival... -->
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer-->
     <footer class="py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">
@@ -190,10 +190,11 @@
       </div>
     </div>
 
-    <!-- Bootstrap JS (for dropdowns) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Your cart logic -->
+    <!-- Bootstrap bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <!-- Your cart + dropdown logic -->
     <script src="js/scripts.js"></script>
   </body>
 </html>
-
